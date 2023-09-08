@@ -1,0 +1,150 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.header-logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -7px;
+}
+
+.header-items {
+    display: flex;
+    padding-top: 46px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 51px;
+}
+
+.header-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    max-width: 470px;
+    color: #2B3541;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    gap: 54px;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    color: #2B3541;
+
+}
+
+.header-button-icons {
+    display: flex;    
+    gap: 30px;
+    margin-top: 43px;
+}
+
+.header-button-item {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.content-main {
+    max-width: 676px;
+    flex-grow: 1;
+}
+
+.visual-bg {
+    opacity: 0.2;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 464px;
+
+}
+
+.content-text-1 {
+    color: var(--dark, #2B3541);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-top: 239px;
+    max-width: 676px;
+}
+
+.content-text-1 p {
+    margin: 0 auto;
+}
+
+.content-text-2 {
+    color: #2B3541;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.content-text-2-trains {
+    margin-left: 20px;
+}
+
+.other-content {
+    margin-left: 92px;
+}
+
+.other-content-text {
+    max-width: 297px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: -17px;
+    margin-bottom: 34px;
+}
+
+.other-content-button {
+    border: none;
+    padding: 20px 30px;
+    background-color: #FBF138;
+    color: var(--dark, #2B3541);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px #FBF138;
+    cursor: pointer;
+}
+
+.content-button {
+    width: 52px;
+    height: 55px;
+    background-image: url(../images/Arrow.svg);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 183px;
+}
