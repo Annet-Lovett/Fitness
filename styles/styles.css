@@ -68,19 +68,37 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    max-width: 1143px;
+    margin: 0 auto;
 }
 
 .content-main {
     max-width: 676px;
     flex-grow: 1;
+    flex: 0 0 676px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.visual {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 13px;
+}
+
+.visual img {
+    position: absolute;
+    left: -347px;
+    top: 39px;
 }
 
 .visual-bg {
     opacity: 0.2;
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 100%;
+    height: 850px;
     width: 464px;
 
 }
@@ -92,7 +110,7 @@ body {
     line-height: 1.25;
     letter-spacing: 1.44px;
     text-transform: uppercase;
-    margin-top: 239px;
+    margin-top: 230px;
     max-width: 676px;
 }
 
@@ -146,5 +164,13 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    margin-top: 183px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.events-item {
+    width: 367px;
+    height: 600px;
+    background-image: url(../images/maraphon.png), linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
 }
