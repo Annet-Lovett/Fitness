@@ -170,7 +170,36 @@ body {
 }
 
 .events-item {
+    position: relative;
+}
+
+.events-img-gradient {
+    display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+
+.events-img-gradient::after {
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
+	opacity: 0.3;
+}
+
+.events-img {
     width: 367px;
     height: 600px;
-    background-image: url(../images/maraphon.png), linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
+}
+
+.events-info {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
