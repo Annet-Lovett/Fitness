@@ -445,6 +445,10 @@ body {
     outline-color: #FBF138;
 }
 
+.flex-email-input:invalid {
+    outline-color: #AE0303;
+}
+
 .flex-email-btn {
     border: none;
     padding: 21px 43px;
@@ -550,3 +554,249 @@ body {
 .agreement label a:hover {
     color: #2B3541;
 }
+
+.item-about {
+    grid-area: a;
+    max-width: 483px;
+}
+
+.img-about-gradient {
+    grid-area: b;
+}
+
+.flex-about-benefit {
+    grid-area: c;
+}
+
+
+.grid-about-company {
+    display: grid;
+    grid-template-columns: 233px 246px 196px 195px;
+    grid-template-rows: 400px 150px;
+    grid-template-areas:     
+    "a a b b"
+    "c c c c";
+    justify-content: space-between;
+    gap: 39px;
+    margin-top: 119px;
+}
+
+.flex-about-benefit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-about {
+    color: #2B3541;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0px;
+}
+
+.info-about {
+    color: #2B3541;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-about {
+    border: none;
+    padding: 21px 51px;
+    background-color: #FBF138;
+    color: #2B3541;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.30);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-about:hover {
+    background: #2B3541;
+    box-shadow: 0px 13px 24px 0px rgba(70, 86, 106, 0.20);
+    color: #FBF138;
+    transition: 0.3s;
+}
+
+.img-about-gradient {
+    display: inline-block;
+	position: relative;    
+	line-height: 0;
+    margin-top: 40px;
+    width: 581px;
+    margin-left: -100px;
+}
+
+.img-about-gradient::after {
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.00) 100%);
+	opacity: 0.3;
+}
+
+.img-about {
+    width: 581px;
+    height: 335px;
+}
+
+.benefit-title, .benefit-info {
+    color: #2B3541;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.benefit-info {
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+.benefit-company-1 {
+    flex-basis: content;
+    max-width: 247px;
+}
+
+.benefit-company-2 {
+    padding-left: 16px;    
+    flex-basis: content;
+    max-width: 294px;
+}
+
+.benefit-company-3 {
+    padding-left: 10px;    
+    flex-basis: content;
+    max-width: 228px;
+}
+
+.benefit-company-4 {
+    padding-left: 10px;    
+    flex-basis: content;
+    max-width: 206px;
+}
+
+.footer {
+    background-color: #F3F3F3;
+    margin-top: 134px;
+    position: relative;
+    height: 149px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -7px;
+}
+
+.footer-items {
+    display: flex;
+    padding-top: 36px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    margin-top: 18px;
+    max-width: 470px;
+    color: #2B3541;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    gap: 90px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #2B3541;
+}
+
+.footer-nav li a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-radius: 1.5px;
+    background: transparent;
+    display: block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.footer-nav li a:hover::after {
+    background: #2B3541;;
+}
+
+.email-footer {
+    color: #2B3541;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 29px;
+    margin-left: 155px;
+}
+
+.footet-img {
+    position: absolute;
+    right: 632px;
+    top: 30px;
+}
+
+.footer-button-icons {
+    display: flex;    
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.footer-button-item {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footer-button-item-instagram:hover {
+    transform: scale(1.27);
+    transition: 0.3s;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.3;
+    color: #2B3541;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 9px;
+}
+
+.post-footer-made-by a {
+    color: #2B3541;
+    text-decoration: underline;
+}
+
