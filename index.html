@@ -26,31 +26,31 @@
                     </nav>
                 </div>
 
-                <div class="header-button-icons">
-                    <button class="header-button-item header-button-item-instagram">
-                        <img src="images/IN.svg" alt="инстаграм">
-                    </button>
-                    <button class="header-button-item">
-                        <img src="images/FB.svg" alt="фейсбук">
-                    </button>
+                <div class="header-link-icons">
+                    <a href="#" target="_blank" class="header-link-item">
+                        <img class="header-img-link" src="images/IN.svg" alt="инстаграм">
+                    </a>
+                    <a href="#" target="_blank" class="header-link-item">
+                        <img class="header-img-link" src="images/FB.svg" alt="фейсбук">
+                    </a>
                 </div>
             </div>
         </div>     
     </header>
 
-    <div class="bg">
+    <div class="information">
         <div class="container">
             <div class="content">
                 <div class="content-main">
                     <div class="content-text">
-                        <div class="content-text-1"><p>онлайн тренировки любой сложности</p></div>
-                        <div class="content-text-2"><p>> 15<span class="content-text-2-trains">тренировок</span></p></div>
+                        <p class="content-text-1">онлайн тренировки любой сложности</p>
+                        <p class="content-text-2">&gt; 15 <span class="content-text-2-trains">тренировок</span></p>
                     </div>
                     <div class="other-content">
-                        <div class="other-content-text"><p>в области спортивной физиологии и нутрициологии</p></div>
-                        <button class="other-content-button">Узнать подробнее</button>
+                        <p class="other-content-text">в области спортивной физиологии и нутрициологии</p>
+                        <button type="button" class="other-content-button">Узнать подробнее</button>
                     </div>
-                    <button class="content-button"></button>
+                    <a href="#eventsHeader" class="content-link"></a>
                 </div>
                 <div class="visual">
                     <div class="visual-bg"></div>
@@ -61,90 +61,88 @@
     </div>
     
     <main>
-        <section class="events">
+        <section class="events" id="eventsHeader">
             <div class="container">
-                <div class="events-header">Ближайшие события</div>
-                <div class="events-flex">
-                    <div class="events-item">
+                <h2 class="events-header">Ближайшие события</h2>
+                <ul class="events-flex">
+                    <li class="events-item">
                         <div class="events-img-gradient"><img src="images/maraphon.png" alt="марафон" class="events-img"></div>
                         <div class="events-info">
-                            <div class="events-date">29.06 - 4.07</div>
+                            <time class="events-date">29.06 - 4.07</time>
                             <div class="events-name">Марафон выносливости</div>
                         </div>
-                        <button class="button-sign">Записаться</button>
+                        <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">марафон</div>
-                    </div>
-                    <div class="events-item">
+                    </li>
+                    <li class="events-item">
                         <div class="events-img-gradient"><img src="images/Vebinar 1.png" alt="вебинар 1" class="events-img"></div>
                         <div class="events-info">
-                            <div class="events-date">9.07</div>
+                            <time class="events-date">9.07</time>
                             <div class="events-name">Как стать тренером?</div>
                         </div>
-                        <button class="button-sign">Записаться</button>
+                        <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">вебинар</div>
-                    </div>
-                    <div class="events-item">
+                    </li>
+                    <li class="events-item">
                         <div class="events-img-gradient"><img src="images/Vebinar 2.png" alt="вебинар 2" class="events-img"></div>
                         <div class="events-info">
-                            <div class="events-date">15.07</div>
+                            <time class="events-date">15.07</time>
                             <div class="events-name">Йога, как стиль жизни</div>
                         </div>
-                        <button class="button-sign">Записаться</button>
+                        <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">вебинар</div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="trainings">
             <div class="container">
                 <div class="trainings-header">
-                    <div class="trainings-header-title">Расписание тренировок</div>
-                    <div class="trainings-header-date">22 - 28 июня</div>
+                    <h2 class="trainings-header-title">Расписание тренировок</h2>
+                    <time class="trainings-header-date">22 - 28 июня</time>
                 </div>
-                <div class="trainings-grid">
-                    <div class="trainings-element trainings-element-1">
-                        <div class="trainings-element-date">22 июня, 10:00</div>
+                <ul class="trainings-grid">
+                    <li class="trainings-element trainings-element-1">
+                        <time class="trainings-element-date">22 июня, 10:00</time>
                         <img src="images/icons/body.svg" alt="" class="trainings-element-icon">
-                        <div class="trainings-element-title">Функциональный тренинг</div>
-                    </div>
-                    <div class="trainings-element trainings-element-2">
-                        <div class="trainings-element-date">24 июня, 10:00</div>
+                        <div class="trainings-element-title">Функциональный тренинг</div>                        
+                    </li>
+                    <li class="trainings-element trainings-element-2">
+                        <time class="trainings-element-date">24 июня, 10:00</time>
                         <img src="images/icons/bottle.svg" alt="" class="trainings-element-icon">
                         <div class="trainings-element-title">Body sculpt</div>
-                    </div>
-                    <div class="trainings-element trainings-element-3">
-                        <div class="trainings-element-date">26 июня, 11:00</div>
+                    </li>
+                    <li class="trainings-element trainings-element-3">
+                        <time class="trainings-element-date">26 июня, 11:00</time>
                         <img src="images/icons/dumbbell.svg" alt="" class="trainings-element-icon">
                         <div class="trainings-element-title">L.A.B.</div>
-                    </div>
-                    <div class="trainings-element trainings-element-4">
-                        <div class="trainings-element-date">23 июня, 10:00</div>
+                    </li>
+                    <li class="trainings-element trainings-element-4">
+                        <time class="trainings-element-date">23 июня, 10:00</time>
                         <img src="images/icons/jump.svg" alt="" class="trainings-element-icon">
                         <div class="trainings-element-title">Силовой микс</div>
-                    </div>
-                    <div class="trainings-element trainings-element-5">
-                        <div class="trainings-element-date">25 июня, 11:00</div>
+                    </li>
+                    <li class="trainings-element trainings-element-5">
+                        <time class="trainings-element-date">25 июня, 11:00</time>
                         <img src="images/icons/heart.svg" alt="" class="trainings-element-icon">
                         <div class="trainings-element-title">Дыхательные практики</div>
-                    </div>
-                    <div class="trainings-element trainings-element-6">
-                        <div class="trainings-element-date">27 июня, 10:00</div>
+                    </li>
+                    <li class="trainings-element trainings-element-6">
+                        <time class="trainings-element-date">27 июня, 10:00</time>
                         <img src="images/icons/weight.svg" alt="" class="trainings-element-icon">
                         <div class="trainings-element-title">Комплексная разминка</div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
-
-        <section class="subscribe-form"></section>
 
         <section class="send-info">
             <div class="container">
                 <div class="send-info-title"><img class="send-info-circle" src="images/Pattern.svg" alt="circle">Подпишитесь на рассылку</div>
                 <div class="flex-email">
                     <input type="email" class="flex-email-input" placeholder="Ваш e-mail">
-                    <button class="flex-email-btn">ПОДПИСАТЬСЯ</button>
+                    <button type="button" class="flex-email-btn">ПОДПИСАТЬСЯ</button>
                 </div>
                 
                 
@@ -162,7 +160,7 @@
                     <div class="item-about">
                         <p class="title-about">О компании</p>
                         <p class="info-about">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbspнами и вы сами увидите, что мы проводим не&nbspтолько онлайн-тренировки.</p>
-                        <button class="btn-about">Записаться</button>
+                        <button type="button" class="btn-about">Записаться</button>
                     </div>
 
                     <div class="img-about-gradient"><img src="images/trainer.png" class="img-about" alt=""></div>
@@ -213,13 +211,13 @@
 
                 <img src="images/Ellipse 3.svg" class="footet-img" alt="">
 
-                <div class="footer-button-icons">
-                    <button class="footer-button-item footer-button-item-instagram">
+                <div class="footer-link-icons">
+                    <a target="_blank" class="footer-link-item">
                         <img src="images/025-instagram 1.svg" alt="инстаграм">
-                    </button>
-                    <button class="footer-button-item">
+                    </a>
+                    <a target="_blank" class="footer-link-item">
                         <img src="images/021-facebook 1.svg" alt="фейсбук">
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -234,6 +232,26 @@
 
         </div>
     </footer>
+
+    <script>
+
+        //scroll
+
+        const links = document.querySelectorAll(".content-link");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
 </html>
