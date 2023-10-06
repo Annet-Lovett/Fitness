@@ -17,6 +17,10 @@
                     
                     <a href="#" class="header-logo"></a>
 
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
+
                     <nav>
                         <ul class="header-nav">
                             <li><a href="#">Мероприятия</a></li>
@@ -54,7 +58,7 @@
                 </div>
                 <div class="visual">
                     <div class="visual-bg"></div>
-                    <img src="images/girl.png" alt="girl">
+                    <img class="visual-img" src="images/girl.png" alt="girl">
                 </div>
             </div>
         </div>
@@ -66,31 +70,40 @@
                 <h2 class="events-header">Ближайшие события</h2>
                 <ul class="events-flex">
                     <li class="events-item">
-                        <div class="events-img-gradient"><img src="images/maraphon.png" alt="марафон" class="events-img"></div>
+                        <div class="events-img-gradient">
+                            <div class="events-img-marafon"></div>
+                        </div>
                         <div class="events-info">
                             <time class="events-date">29.06 - 4.07</time>
                             <div class="events-name">Марафон выносливости</div>
                         </div>
                         <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">марафон</div>
+                        <button class="events-button"></button>
                     </li>
                     <li class="events-item">
-                        <div class="events-img-gradient"><img src="images/Vebinar 1.png" alt="вебинар 1" class="events-img"></div>
+                        <div class="events-img-gradient">
+                            <div class="events-img-vebinar1"></div>
+                        </div>
                         <div class="events-info">
                             <time class="events-date">9.07</time>
                             <div class="events-name">Как стать тренером?</div>
                         </div>
                         <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">вебинар</div>
+                        <button class="events-button"></button>
                     </li>
                     <li class="events-item">
-                        <div class="events-img-gradient"><img src="images/Vebinar 2.png" alt="вебинар 2" class="events-img"></div>
-                        <div class="events-info">
+                        <div class="events-img-gradient">
+                            <div class="events-img-vebinar2"></div>
+                        </div>
+                        <div class="events-info events-info-yoga">
                             <time class="events-date">15.07</time>
                             <div class="events-name">Йога, как стиль жизни</div>
                         </div>
                         <button type="button" class="button-sign">Записаться</button>
                         <div class="events-type">вебинар</div>
+                        <button class="events-button"></button>
                     </li>
                 </ul>
             </div>
@@ -141,14 +154,14 @@
             <div class="container">
                 <div class="send-info-title"><img class="send-info-circle" src="images/Pattern.svg" alt="circle">Подпишитесь на рассылку</div>
                 <div class="flex-email">
-                    <input type="email" class="flex-email-input" placeholder="Ваш e-mail">
-                    <button type="button" class="flex-email-btn">ПОДПИСАТЬСЯ</button>
-                </div>
-                
-                
-                <div class="agreement">
-                    <input type="checkbox" id="01" class="checkbox">
-                    <label for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                    <div class="send-info-input">
+                        <input type="email" class="flex-email-input" placeholder="Ваш e-mail">
+                        <div class="agreement">
+                            <input type="checkbox" id="01" class="checkbox">
+                            <label for="01">Согласен с обработкой <a href="#" target="_blank">персональных данных</a></label>
+                        </div>
+                    </div>
+                    <div class="send-info-btn"><button type="button" class="flex-email-btn">ПОДПИСАТЬСЯ</button></div>
                 </div>
             </div>
         </section>
@@ -184,6 +197,23 @@
                         </div>
                     </div>
 
+                    <div class="benefit-company_tab benefit-company-1">
+                        <p class="benefit-title">Экономия времени</p>
+                        <p class="benefit-info">Не нужно тратить&nbspвремя на дорогу</p>
+                    </div>
+                    <div class="benefit-company_tab benefit-company-2">
+                        <p class="benefit-title">Индивидуальный подход</p>
+                        <p class="benefit-info">Внимание тренера пренадлежит только вам</p>
+                    </div>
+                    <div class="benefit-company_tab benefit-company-3">
+                        <p class="benefit-title">Экономия денег</p>
+                        <p class="benefit-info">Средняя цена одной тренировки - 700₽</p>
+                    </div>
+                    <div class="benefit-company_tab benefit-company-4">
+                        <p class="benefit-title">Опытный персонал</p>
+                        <p class="benefit-info">Стаж работы у наших тренеров от 5 лет</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -192,8 +222,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-flex">
-                <div class="footer-items">
-                
+                <div class="footer-items"> 
                     <a href="#" class="footer-logo"></a>
 
                     <nav>
@@ -205,19 +234,19 @@
                     </nav>
                 </div>
 
-                <div class="email-footer">
-                    info@freefit.com
-                </div>
-
-                <img src="images/Ellipse 3.svg" class="footet-img" alt="">
-
-                <div class="footer-link-icons">
-                    <a target="_blank" class="footer-link-item">
-                        <img src="images/025-instagram 1.svg" alt="инстаграм">
-                    </a>
-                    <a target="_blank" class="footer-link-item">
-                        <img src="images/021-facebook 1.svg" alt="фейсбук">
-                    </a>
+                <div class="footer-social">
+                    <div class="email-footer">
+                        info@freefit.com
+                    </div>
+                    <img src="images/Ellipse 3.svg" class="footet-img" alt="">
+                    <div class="footer-link-icons">
+                        <a target="_blank" class="footer-link-item">
+                            <img src="images/025-instagram 1.svg" alt="инстаграм">
+                        </a>
+                        <a target="_blank" class="footer-link-item">
+                            <img src="images/021-facebook 1.svg" alt="фейсбук">
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -232,6 +261,31 @@
 
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-menu">
+            <div class="modal-header">
+                <a href="#" class="header-logo header-logo-modal"></a>
+                <button class="burger-close" onclick="closeModal()"></button>
+            </div>
+            <div class="module-nav">
+                <ul class="header-nav header-nav-modal">
+                    <li class="header-nav-item"><a href="#">Мероприятия</a></li>
+                    <li class="header-nav-item"><a href="#">Расписание</a></li>
+                    <li class="header-nav-item"><a href="#">О компании</a></li>
+                </ul>
+            </div>
+            <div class="header-link-icons header-link-icons-modal">
+                <a href="#" target="_blank" class="header-link-item">
+                    <img class="header-img-link" src="images/IN.svg" alt="инстаграм">
+                </a>
+                <a href="#" target="_blank" class="header-link-item">
+                    <img class="header-img-link" src="images/FB.svg" alt="фейсбук">
+                </a>
+            </div>
+        </div>
+        <div class="modal-grey-window"></div>
+    </div>
 
     <script>
 
@@ -250,6 +304,16 @@
             document.querySelector(href).scrollIntoView({
                 behavior: "smooth"
             });
+        }
+
+        // Burger
+
+        function openModal() {
+            document.getElementById("modal").style.left = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.left = "-1000px";
         }
     </script>
 

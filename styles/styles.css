@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
 
 .header-items {
     display: flex;
-    padding-top: 46px;
+    padding-top: 43px;
     justify-content: space-between;
     align-items: center;
     gap: 51px;
@@ -111,7 +112,7 @@ body {
     margin-top: 13px;
 }
 
-.visual img {
+.visual-img {
     position: absolute;
     left: -347px;
     top: 39px;
@@ -246,9 +247,34 @@ body {
     transition: 0.3s;
 }
 
-.events-img {
+.events-img-marafon {
+    background-image: url(../images/maraphon.xl.png);
+    background-size: 287%;
+    background-repeat: no-repeat;
     width: 367px;
     height: 600px;
+    background-position-x: -308px;
+    background-position-y: -105px;
+}
+
+.events-img-vebinar1 {
+    background-image: url(../images/Vebinar.xl.png);
+    background-size: 123%;
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 600px;
+    background-position-x: -8px;
+    background-position-y: -2px;
+}
+
+.events-img-vebinar2 {
+    background-image: url(../images/Vebinar.xl\ 2.png);
+    background-size: 267%;
+    background-repeat: no-repeat;
+    width: 367px;
+    height: 600px;
+    background-position-x: -483px;
+    background-position-y: -49px;
 }
 
 .events-info {
@@ -433,6 +459,7 @@ body {
 .send-info {
     background-color: #F3F3F3;
     margin-top: 160px;
+    height: 349px;
 }
 
 .send-info-title {
@@ -456,8 +483,9 @@ body {
     max-width: 617px;
     justify-content: space-between;
     align-items: center;
-    margin-left: 271px;
+    margin: auto;
     margin-top: 42px;
+    padding-left: 20px;
 }
 
 .flex-email-input {
@@ -569,13 +597,18 @@ body {
     border-radius: 100%;
 }
 
+.send-info-input {
+    min-height: 95px;
+}
+
 .agreement {
     color: rgba(43, 53, 65, 0.50);
     font-family: Montserrat;
     font-size: 11px;
     font-weight: 400;
     line-height: 150%;
-    padding: 12px 0px 83px 270px;
+    padding: 10px 0px 0px 0px;
+    margin-left: -2px;
 }
 
 .agreement label a {
@@ -584,6 +617,10 @@ body {
 
 .agreement label a:hover {
     color: #2B3541;
+}
+
+.send-info-btn {
+    min-height: 95px;
 }
 
 .item-about {
@@ -731,6 +768,11 @@ body {
     align-items: center;
 }
 
+.footer-social {
+    display: flex;
+    gap: 63px;
+}
+
 .footer-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -743,7 +785,7 @@ body {
 
 .footer-items {
     display: flex;
-    padding-top: 36px;
+    padding-top: 35px;
     justify-content: space-between;
     align-items: center;
     gap: 36px;
@@ -786,7 +828,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.5;
-    margin-top: 29px;
+    margin-top: 32px;
     margin-left: 155px;
     z-index: 2;
 }
@@ -836,4 +878,525 @@ body {
 .post-footer-made-by a:hover {
     opacity: 1;
     color: #000;
+}
+
+.burger {
+    width: 29px;
+    height: 22px;
+    margin-top: -2px;
+    background-image: url(../images/icons/burger.svg);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/* Modal */
+
+.modal {
+    width: 100%;
+    position: absolute;
+    left: -1000px;
+    top: 0;
+    transition: 0.5s;
+}
+
+.modal-menu {
+    height: 331px;
+    background-color: rgba(243, 243, 243, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px;
+    justify-content: space-between;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo-modal {
+    margin-top: 0;
+}
+
+.header-nav-modal {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-nav-item {
+    min-height: 50px;
+    width: 100%;
+}
+
+.header-nav-modal li a {
+    display: block;
+    max-width: fit-content;
+    width: fit-content;
+}
+
+.header-nav-modal li a::after {
+    content: '';
+    margin-top: 0px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.header-nav-modal li:nth-child(1) {
+    border-bottom: 1px solid rgba(43, 53, 65, 0.2);
+}
+
+.header-nav-modal li:nth-child(2) {
+    border-bottom: 1px solid rgba(43, 53, 65, 0.2);
+}
+
+.header-link-icons-modal {
+    margin-top: 0;
+    justify-content: end;
+}
+
+.burger-close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/close.svg);
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.modal-grey-window {
+    height: 3417px;
+    z-index: 10;
+    position: relative;
+    opacity: 0.4;
+    background-color: rgba(43, 53, 65, 1);
+}
+
+/* Media */
+
+@media (min-width: 800px) {
+    .header-burger {
+        display: none;
+    }
+
+    .events-button {
+        display: none;
+    }
+
+    .benefit-company_tab {
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+    .container {
+        max-width: 748px;
+        padding-left: 14px;
+    }
+
+
+    .header {
+        margin-top: -12px;
+        margin-left: 0;
+    }
+
+    .header-items {
+        gap: 57px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+    
+    .header-nav-modal {
+        display: flex;
+    }
+
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+
+    .header-link-icons {
+        gap: 21px;
+    }
+
+    .header-img-link {
+        width: 26px;
+        height: 26px;
+    }
+
+    .content {
+        max-width: 748px;
+    }
+
+    .content-main {
+        max-width: 359px;
+        margin-top: 57px;
+    }
+
+    .content-text-1 {
+        font-size: 26px;
+        max-width: 358px;
+        margin-top: 0px;
+        letter-spacing: 0.8px;
+    }
+
+    .content-text-2 {
+        font-size: 26px;
+        max-width: 240px;
+        margin-top: 44px;
+    }
+
+    .other-content {
+        margin-left: 0;
+    }
+
+    .other-content-text {
+        margin-top: -11px;
+        margin-bottom: 43px;
+        letter-spacing: 0px;
+        font-size: 16px;
+        max-width: 260px;
+    }
+
+    .content-link {
+        width: 39px;
+        height: 44px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .visual-bg {
+        width: 359px;
+        height: 429px;
+        margin-top: 26px;
+    }
+
+    .visual-img {   
+        position: absolute;     
+        left: -11px;
+        top: 131px;
+        width: 397px;
+        height: 324px;
+    }
+
+    .events-header {
+        font-size: 26px;
+        margin-top: 104px;
+        margin-bottom: 0;
+    }
+
+    .events-flex {
+        margin-top: 18px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .events-info {
+        max-width: 180px;
+        margin-left: 26px;
+        margin-top: 17px;
+    }
+
+    .events-info-yoga {
+        margin-top: 15px;
+        margin-left: 24px;
+    }
+
+    .events-date {
+        font-size: 12px;
+    }
+
+    .events-name {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+
+    .events-img-marafon {
+        height: 309px;
+        width: 364px;
+        background-size: 126%;
+        background-position-x: -47px;
+        background-position-y: 2px;
+    }
+
+    .events-img-vebinar1 {
+        height: 309px;
+        width: 364px;
+        background-size: 159%;
+        background-position-x: -78px;
+        background-position-y: -116px;
+    }
+
+    .events-img-vebinar2 {
+        height: 336px;
+        width: 748px;
+        background-size: 100%;
+        background-position-x: 0;
+        background-position-y: -73px;
+    }
+
+    .button-sign {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .events-type {
+        right: inherit;
+        left: 0;
+        padding: 6.5px 16px;
+        font-size: 12px;
+    } 
+
+    .events-button {
+        display: block;
+        border: none;
+        background-color: rgba(43, 53, 65, 1);
+        height: 30px;
+        width: 30px;
+        background-image: url(../images/icons/mdi_add.svg);
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+
+    .trainings-header {
+        margin-top: 89px;
+    }
+
+    .trainings-header-title {
+        font-size: 26px;
+        max-width: 250px;
+    }
+
+    .trainings-header-date {
+        font-size: 16px;
+        margin-top: 11px;
+    }
+
+    .trainings-grid {
+        grid-template-columns: repeat(2, 364px);
+        grid-template-rows: repeat(3, 224px);
+    }
+
+    .trainings-element {
+        height: 224px;
+        width: 362px;
+    }
+
+    .trainings-element-2 {
+        height: 224px;
+        width: 362px;
+    }
+
+    .trainings-element-5 {
+        height: 224px;
+        margin-top: 0;
+    }
+
+    .trainings-element-date {
+        right: 22px;
+        font-size: 16px;
+    }
+
+    .trainings-element-icon {
+        left: 23px;
+        bottom: 75px;
+    }
+
+    .trainings-element-title {
+        font-size: 16px;
+        bottom: 19px;
+        left: 23px;
+    }
+
+    .send-info {
+        margin-top: 91px;
+        height: 416px;
+    }
+
+    .send-info-title {
+        font-size: 26px;
+        padding-top: 61px;
+        max-width: 230px;
+        margin: auto;
+    }
+
+    .send-info-circle {
+        top: 38px;
+        left: -11px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .flex-email {
+        flex-direction: column;
+        max-width: 400px;
+        gap: 43px;
+    }
+
+    .send-info-input {
+        margin-left: -17px;
+        margin-top: 12px;
+    }
+
+    .flex-email-input {
+        width: 313px;
+        padding-left: 24px;
+    }
+
+    .agreement {
+        padding: 10px 0px 0px 0px;
+        margin-left: -2px;
+    }
+
+    .flex-email-btn {
+        padding: 20.5px 101.5px;
+        margin-left: -20px;
+    }
+
+    .grid-about-company {
+        margin-top: 71px;
+    }
+
+    .item-about {
+        max-width: 310px;
+    }
+
+    .title-about {
+        font-size: 26px;
+    }
+
+    .info-about {
+        font-size: 16px;
+    }
+
+    .btn-about {
+        padding: 21px 46px;
+        margin-top: 15px;
+    }
+
+    .flex-about-benefit {
+        display: none;
+    }
+
+    .benefit-company_tab {
+        display: block;
+    }
+
+    .grid-about-company {
+        grid-template-columns: 340px 373px;
+        grid-template-rows: 300px 83px 83px;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f";
+            gap: 35px;
+    }
+
+    .benefit-company-1 {
+        grid-area: c;
+    }
+
+    .benefit-company-2 {
+        grid-area: d;
+    }
+
+    .benefit-company-3 {
+        grid-area: e;
+    }
+
+    .benefit-company-4 {
+        grid-area: f;
+    }
+
+    .img-about-gradient {
+        width: 100%;
+        height: 227px;
+        margin-top: 26px;
+        margin-left: 0;
+    }
+
+    .img-about {
+        width: 372.85px;
+        height: 227px;
+        margin-top: 0px;
+    }
+
+    .benefit-company_tab{
+        padding: 0;
+        max-width: 225px;
+    }
+
+    .benefit-title, .benefit-info {
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 115px;
+        height: 280px;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+        align-items: end;
+        gap: 2px;
+    }
+
+    .footer-nav {
+        font-size: 12px;
+        gap: 26px;
+    }
+
+    .footer-items {
+        padding-top: 45px;
+        gap: inherit;
+        width: 100%;
+    }
+
+    .footer-social {
+        gap: 34px;
+    }
+
+    .email-footer {
+        margin-left: 0;
+        margin-top: 35px;
+        font-size: 12px;
+    }
+
+    .footet-img {
+        right: 198px;
+        height: 58px;
+        width: 58px;
+        top: inherit;
+        bottom: 97px;
+    }
+
+    .footer-link-icons {
+        gap: 22px;
+    }
+
+    .post-footer {
+        margin-top: 43px;
+    }
+
+    .post-footer-year, .post-footer-made-by {
+        font-size: 10px;
+    }
+
 }
