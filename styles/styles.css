@@ -985,6 +985,16 @@ body {
 
 /* Media */
 
+@media (max-width: 1500px) {
+    .visual-img {
+        width: 800px;
+    }
+
+    .visual-bg {
+        height: 696px;
+    }
+}
+
 @media (min-width: 800px) {
     .header-burger {
         display: none;
