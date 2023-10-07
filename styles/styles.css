@@ -791,7 +791,7 @@ body {
     gap: 36px;
 }
 
-.footer-nav {
+.footer-nav-ul {
     display: flex;
     list-style: none;
     margin-top: 18px;
@@ -803,12 +803,12 @@ body {
     gap: 90px;
 }
 
-.footer-nav li a {
+.footer-nav-ul li a {
     text-decoration: none;
     color: #2B3541;
 }
 
-.footer-nav li a::after {
+.footer-nav-ul li a::after {
     content: '';
     width: 100%;
     height: 1px;
@@ -819,7 +819,7 @@ body {
     transition: 0.3s;
 }
 
-.footer-nav li a:hover::after {
+.footer-nav-ul li a:hover::after {
     background: #2B3541;;
 }
 
@@ -1202,6 +1202,7 @@ body {
     .trainings-grid {
         grid-template-columns: repeat(2, 364px);
         grid-template-rows: repeat(3, 224px);
+        grid-auto-flow: column;
     }
 
     .trainings-element {
@@ -1316,7 +1317,7 @@ body {
             "a b"
             "c d"
             "e f";
-            gap: 35px;
+        gap: 35px;
     }
 
     .benefit-company-1 {
@@ -1368,7 +1369,7 @@ body {
         gap: 2px;
     }
 
-    .footer-nav {
+    .footer-nav-ul {
         font-size: 12px;
         gap: 26px;
     }
@@ -1409,4 +1410,258 @@ body {
         font-size: 10px;
     }
 
+}
+
+@media (max-width: 377px) {
+    .container {
+        max-width: 340px;
+        padding: 0px 10px;
+    }
+
+    .content {
+        max-width: 340px;
+        flex-direction: column;
+    }
+
+    .content-link {
+        display: none;
+    }
+
+    .content-main {
+        flex: 0 0 312px;
+    }
+
+    .other-content-button {
+        width: 100%;
+    }
+
+    .visual-bg {
+        width: 340px;
+        height: 216px;
+    }
+
+    .visual-img {
+        left: -1px;
+        top: 8px;
+        width: 340px;
+        height: 281px;
+    }
+
+    .events-header {
+        margin-top: 175px;
+    }
+
+    .events-item {
+        width: 165px;
+        height: 310px;
+    }
+
+    .events-item-vebinar2 {
+        width: 340px;
+        height: 336px;
+    }
+
+    .events-info-yoga {
+        margin-top: 18px;
+        margin-left: 20px;
+        max-width: 130px;
+    }
+
+    .events-info {
+        max-width: 140px;
+        margin-left: 19px;
+        margin-top: 17px;
+    }
+
+    .events-img-marafon {
+        height: 310px;
+        width: 165px;
+        background-size: 400%;
+        background-position-x: -225px;
+        background-position-y: -90px;
+    }
+
+    .events-img-vebinar1 {
+        height: 310px;
+        width: 165px;
+        background-size: 190%;
+        background-position-x: -62px;
+        background-position-y: -84px;
+    }
+
+    .events-img-vebinar2 {
+        height: 336px;
+        width: 340px;
+        background-size: 182%;
+        background-position-x: -247px;
+        background-position-y: -66px;
+    }
+    .button-sign {
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+    
+    .events-button {
+        bottom: 0px;
+    }
+    
+    .events-type {
+        bottom: 0px;
+    } 
+
+    .trainings-header {
+        margin-top: 83px;
+    }
+
+    .trainings-header-title {
+        max-width: 200px;
+    }
+
+    .trainings-grid {
+        display: flex;
+        flex-direction: column;
+        margin-top: 19px;
+    }
+
+    .trainings-element {
+        height: 112px;
+        width: 338px;
+    }
+
+    .trainings-element-2 {
+        height: 112px;
+        width: 338px;
+    }
+
+    .trainings-element-5 {
+        height: 112px;
+        width: 338px;
+    }
+
+    .trainings-element-date {
+        right: 20px;
+    }
+
+    .trainings-element-icon {
+        left: 19px;
+        bottom: 19px;
+        width: 39px;
+    }
+
+    .trainings-element-icon-bottle {
+        bottom: 19px;
+        width: 34px;
+        height: 53px;
+    }
+
+    trainings-element-icon-dumbell {
+        bottom: 19px;
+        width: 23px;
+        height: 45px;
+    }
+
+    .trainings-element-title {
+        bottom: 28px;
+        left: 76px;
+    }
+
+    .send-info {
+        margin-top: 79px;
+    }
+
+    .grid-about-company {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+        gap: 43px;
+    }
+
+    .benefit-company {
+        padding: 0;
+    }
+
+    .item-about {
+        max-width: 340px;
+    }
+
+    .info-about {
+        max-width: 310px;
+    }
+
+    .btn-about {
+        width: 100%;
+    }
+
+    .img-about-gradient {
+        display: none;
+    }
+
+    .benefit-company_tab {
+        display: none;
+    }
+
+    .flex-about-benefit {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        max-width: 229px;
+    }
+
+    .footer {
+        margin-top: 64px;
+        height: 304px;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        gap: 41px;
+        padding-top: 48px;
+    }
+
+    .foote-nav {
+        width: 340px;
+    }
+
+    .footer-nav-ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-nav li a::after {
+        content: '';
+        margin-top: 0px;
+    }
+
+    .footer-flex {
+        gap: 9px;
+    }
+
+    .footer-social {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-link-icons {
+        margin-top: 0;
+    }
+
+    .email-footer {
+        margin-top: 5px;
+    }
+
+    .footet-img {
+        right: inherit;
+        bottom: 110px;
+        left: -16px;
+    }
+
+    .post-footer {
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 }
