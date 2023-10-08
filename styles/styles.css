@@ -66,23 +66,53 @@ body {
     background: #2B3541;;
 }
 
-.header-link-icons {
-    display: flex;    
-    gap: 30px;
-    margin-top: 43px;
-}
-
-.header-link-item {
-    border: none;
-    background-color: transparent;
+.header-link-items {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    cursor: pointer; 
-    transition: 0.4s;
+    padding-top: 43px;
 }
 
-.header-link-item:hover {
+.header-social {
+    width: 30px;
+    height: 30px;
+}
+
+.header-link-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    transition: 0.3s;
+}
+
+.header-link-icon-inst {
+    background-image: url(../images/IN.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-link-icon-fb {
+    background-image: url(../images/FB.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-link-icon:hover {
     transform: scale(1.27);
+}
+
+.header-social-footer, .header-link-icon-footer {
+    width: 27px;
+    height: 27px;
+}
+
+.header-link-items-footer {
+    padding-top: 31px;
+    width: 84px;
 }
 
 .information {
@@ -202,6 +232,10 @@ body {
     cursor: pointer;
     transition: 0.3s;
     scroll-behavior: smooth;
+}
+
+.content-link:hover {
+    transform: scale(1.2);
 }
 
 .events-header {
@@ -833,6 +867,11 @@ body {
     z-index: 2;
 }
 
+.email {
+    color: #2B3541;
+    text-decoration: none;
+}
+
 .footet-img {
     position: absolute;
     right: 632px;
@@ -995,7 +1034,7 @@ body {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 769px) {
     .header-burger {
         display: none;
     }
@@ -1009,7 +1048,7 @@ body {
     }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 768px) {
     .container {
         max-width: 748px;
         padding-left: 14px;
@@ -1038,13 +1077,13 @@ body {
         height: 24px;
     }
 
-    .header-link-icons {
-        gap: 21px;
+    .header-link-items {
+        padding-right: 15px;
     }
 
-    .header-img-link {
-        width: 26px;
-        height: 26px;
+    .header-social {
+        width: 27px;
+        height: 27px;
     }
 
     .content {
@@ -1096,7 +1135,7 @@ body {
 
     .visual-img {   
         position: absolute;     
-        left: -11px;
+        left: -60px;
         top: 131px;
         width: 397px;
         height: 324px;
@@ -1412,7 +1451,7 @@ body {
 
 }
 
-@media (max-width: 377px) {
+@media (max-width: 360px) {
     .container {
         max-width: 340px;
         padding: 0px 10px;
